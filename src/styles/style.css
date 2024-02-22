@@ -175,6 +175,12 @@ input[type=number] {
   border: 1px solid hsl(0, 0%, 94%);
 }
 
+.error {
+  color: hsl(0, 100%, 67%);
+  font-style: italic;
+  font-weight: 400;
+}
+
 @media (min-width: 376px) {
   body {
     display: flex;
@@ -191,6 +197,9 @@ input[type=number] {
   }
   .form__input {
     padding: 1rem 1.5rem;
+  }
+  .form__input--container {
+    gap: 0.5rem;
   }
   .btn--calc {
     position: static;

@@ -27,20 +27,23 @@
   <article class="age-calc">
 
 
-    <form class="form">
+    <form class="form" novalidate>
 
       <fieldset class="form__fieldset">
         <div class="form__input--container">
           <label class="form__label" for="day">Day</label>
           <input class="form__input" max="31" type="number" placeholder="DD" name="day" id="day" required>
+          <span class="error"></span>
         </div>
         <div class="form__input--container">
           <label class="form__label" for="month">Month</label>
           <input class="form__input" max="12" type="number" placeholder="MM" name="month" id="month" required>
+          <span class="error"></span>
         </div>
         <div class="form__input--container">
           <label class="form__label" for="year">Year</label>
           <input class="form__input" type="number" placeholder="YYYY" name="year" id="year" required>
+          <span class="error"></span>
         </div>
       </fieldset>
       <div class="btn--container">
@@ -53,21 +56,21 @@
 
       <section class="age-calc__main__section">
         <h2 class="age-calc__main__section__heading">
-          <span class="age-calc__main__section__heading__span">--</span>
+          <span class="age-calc__main__section__heading__span years">--</span>
           years
         </h2>
       </section>
 
       <section class="age-calc__main__section">
         <h2 class="age-calc__main__section__heading">
-          <span class="age-calc__main__section__heading__span">--</span>
+          <span class="age-calc__main__section__heading__span months">--</span>
           months
         </h2>
       </section>
 
       <section class="age-calc__main__section">
         <h2 class="age-calc__main__section__heading">
-          <span class="age-calc__main__section__heading__span">--</span> days
+          <span class="age-calc__main__section__heading__span days">--</span> days
         </h2>
       </section>
 

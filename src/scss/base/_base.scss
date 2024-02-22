@@ -11,7 +11,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-
 input[type="number"] {
   -moz-appearance: textfield; /* Firefox */
   -webkit-appearance: textfield; /* Chrome, Safari, newer versions of Opera */
@@ -113,6 +112,12 @@ input[type="number"] {
   border: 1px solid $clr-white-off;
 }
 
+.error {
+  color: $clr-red;
+  font-style: $fs-italic;
+  font-weight: $fw-400;
+}
+
 @media (min-width: 376px) {
   body {
     display: $display-flex;
@@ -130,6 +135,9 @@ input[type="number"] {
 
     &__input {
       padding: 1rem 1.5rem;
+      &--container {
+        gap: 0.5rem;
+      }
     }
   }
 
