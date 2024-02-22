@@ -11,9 +11,10 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
+
 input[type="number"] {
-  -moz-appearance: textfield;
+  -moz-appearance: textfield; /* Firefox */
+  -webkit-appearance: textfield; /* Chrome, Safari, newer versions of Opera */
 }
 
 .age-calc {
