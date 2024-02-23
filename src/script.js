@@ -22,6 +22,10 @@ const daysElement = document.querySelector(
   ".age-calc__main__section__heading__span.days"
 );
 
+const ageInDaysElement = document.querySelector(
+  ".age-calc__main__section__heading__span.age-in-days"
+);
+
 const currentDate = new Date();
 let errorElement;
 
@@ -48,17 +52,22 @@ const calculateAge = function (day, month, year) {
   const totalMonths = Math.floor((ageInDays % 365.25) / 30.4167);
   const totalDays = Math.round((ageInDays % 365.25) % 30.4167);
 
-  console.log(totalYears, totalMonths, totalDays);
+  console.log(totalYears, totalMonths, totalDays, ageInDays);
 
-  return [totalYears, totalMonths, totalDays];
+  return [totalYears, totalMonths, totalDays, ageInDays];
 };
 
 const displayAge = function (year, month, day) {
-  const [totalYears, totalMonths, totalDays] = calculateAge(day, month, year);
+  const [totalYears, totalMonths, totalDays, totalAgeInDays] = calculateAge(
+    day,
+    month,
+    year
+  );
 
   yearElement.textContent = `${totalYears}`;
   monthElement.textContent = `${totalMonths}`;
   daysElement.textContent = `${totalDays}`;
+  ageInDaysElement.textContent = `${totalAgeInDays}`;
 };
 
 fieldSet.addEventListener("input", function (event) {

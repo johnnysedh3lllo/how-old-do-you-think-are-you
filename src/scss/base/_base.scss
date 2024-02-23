@@ -25,7 +25,8 @@ input[type="number"] {
     line-height: 1.2;
     &__section {
       &__heading {
-        font-size: clamp(3.4rem, 2.27rem + 4.8vw, 6.5rem);
+        // font-size: clamp(3.4rem, 2.27rem + 4.8vw, 6.5rem);
+        font-size: 3rem;
         font-weight: $fw-800;
         font-style: $fs-italic;
         &__span {
@@ -178,8 +179,8 @@ input[type="number"] {
   }
 }
 
-// @media (min-width: 376px) and (max-width: 769px) {
-//   .form__fieldset {
-//     flex-wrap: wrap;
-//   }
-// }
+@media (min-width: 376px) and (max-width: 769px) {
+  .form__fieldset {
+    flex-wrap: wrap;
+  }
+}
